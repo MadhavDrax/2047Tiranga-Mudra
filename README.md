@@ -6,6 +6,8 @@ Welcome to the **Viksit Bharat** project! This initiative aims to create a moder
 
 ### 🖥️ Frontend
 
+I developed the frontend part of this project, using the following technologies:
+
 - **Tech Stack:** HTML, CSS, JavaScript
 - **Live Preview:** [Viksit Bharat Frontend](https://madhavdrax.github.io/ViksitBharat/)
 
