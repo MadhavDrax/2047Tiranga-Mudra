@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to close the popup
     function closePopupFunc() {
         popupOverlay.style.display = 'none';
+		mainbody.classList.remove("stopscroll");
     }
 	function submitedClosePopupFunc() {
 		submitedPopupOverlay.style.display = 'none';
@@ -101,11 +102,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to submit the signup form
 	formSubmit.addEventListener('click',submitForm);
     function submitForm() {
-        submitedPopupOverlay.style.display='block';
+		//second popup open
+		submitedPopupOverlay.style.display='block';
 		
         // Add your form submission logic here
         // console.log(`Email submitted: ${email}`);
         closePopupFunc(); // Close the popup after form submission
+		mainbody.classList.add("stopscroll");
     }
 
 	submitedClosePopup.addEventListener('click',submitedClosePopupFunc);
