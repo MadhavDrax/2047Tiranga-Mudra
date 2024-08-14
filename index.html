@@ -9,7 +9,10 @@
 
 	<meta name="description" content="" />
 	<meta name="keywords" content="bootstrap, bootstrap4" />
-
+	<!-- font link  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&display=swap" rel="stylesheet">
 	<!-- Bootstrap CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
@@ -55,7 +58,7 @@
 			<div class="row justify-content-between">
 				<div class="col-lg-5">
 					<div class="intro-excerpt">
-						<img src="images/Titanga-Mudra-PNG.png" alt="Titanga-Mudra-PNG" />
+						<img src="/images/Titanga-Mudra-PNG.png" alt="Titanga-Mudra-PNG" />
 						<h1>1857 To 2047<span clsas="d-block"> <br>"Voice of Youth"</span></h1>
 						<!-- <p class="mb-4">..</p> -->
 						<!-- <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p> -->
@@ -63,7 +66,10 @@
 				</div>
 				<div class="col-lg-7">
 					<div class="hero-img-wrap">
-						<img src="images/Indian-flag67crop.png" class="img-fluid" />
+						<img src="images/iflag.png"/>
+						<img src="images/chakra.png" class="chakra"/>
+						<!-- <div class="chakra"></div> -->
+						<!-- <img src="images/Indian-flag67crop.png" class="img-fluid"> -->
 					</div>
 				</div>
 			</div>
@@ -77,8 +83,10 @@
 			<div class="row justify-content-between">
 				<div class="col-lg-6">
 					<h2 class="section-title">
-						We are started phase - 1 <br />Viksit Bharat@2027
+						We are started <br />
+						Phase - 1 Viksit Bharat@2027
 					</h2>
+					<br>
 					<h2 class="section-title">Our Motive</h2>
 					<br />
 					<h5>
@@ -113,6 +121,7 @@
 				<div class="col-lg-5">
 					<div class="img-wrap">
 						<img src="images/vasudev-asia-map2.png" alt="Image" class="img-fluid" />
+						 <!-- <img src="images/indian-flag.svg" class="img-fluid"/> -->
 					</div>
 				</div>
 			</div>
@@ -121,13 +130,20 @@
 	<!-- End Why Choose Us Section -->
 
 	<!-- Youtube Section -->
-	<div class="why-choose-section">
+	<!-- <div class="why-choose-section">
 		<div class="container">
 			<div class="youtube">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/krDWc30PAGg?autoplay=1&mute=1&loop=1&playlist=krDWc30PAGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe id="youtube-video" width="560" height="315" 
+				src="https://www.youtube.com/embed/krDWc30PAGg?autoplay=0&mute=0&loop=1&playlist=krDWc30PAGg&enablejsapi=1" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				referrerpolicy="strict-origin-when-cross-origin" 
+				allowfullscreen>
+				</iframe>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Youtube Section -->
 
 	<!-- Start Product Section -->
@@ -138,6 +154,7 @@
 				<div class="col-md-12 col-lg-3 mb-lg-0 div1">
 					<h2 class="mb-4 section-title">Donate a Flag</h2>
 					<p class="popup-btn btn">Click Here</p>
+					<div class="totalFlags">Total flag donated- <span id="flas"></span></div>
 				</div>
 
 				<!-- Popup start -->
@@ -169,13 +186,16 @@
 
 				<!-- submit popup start  -->
 				<div class="popup-overlay" id="popupOverlay2">
-					<div class="popup" id="popup2">
+					<div class="popup popup2" id="popup2">
 						<span class="close" id="closePopup2">&times;</span>
 						<div class="popup-content-submit">
 							<img src="images/greentick.png" alt="tick" />
-							<p>Thankyou for flag donation</p>
-							<p id="refCode">Your referral code :</p>
-							<button id="share">
+							<div id="text-to-share">
+								<p>|| तिरंगा दान करने के लिए धन्यवाद ||</p>
+									<p>भारत को विकसित राष्ट्र बनाने के लिए एवं 'तिरंगा मुद्रा' का लाभ उठाने के लिए कृपया इस लिंक को अपने समस्त परिजनों मित्रों के साथ अधिक से अधिक शेयर करें।</p>
+									<p><b>Your Referral Code : <span id="refCode">ABCD124</span></b></p>
+							</div>
+							<button id="whatsapp-share">
 								<img src="images/icons8-whatsapp-48.png" alt="whatsapp" />
 							</button>
 						</div>
@@ -188,34 +208,22 @@
 
 				<!-- Start Column 2 -->
 				<div class="col-12 col-lg-3 mb-5 mb-md-0 div2">
-					<img src="images/india-450_256.gif" class="img-fluid product-thumbnail" />
+					<img src="images/india-450_256.gif" class="product-thumbnail" />
 				</div>
 				<!-- End Column 2 -->
 
 				<!-- Start Column 3 -->
 				<div class="col-12 col-lg-6 mb-5 mb-md-0 div3">
-					<section class="countdown-container">
-						<div class="days-container">
-							<div class="days"></div>
-							<div class="days-label">days</div>
-						</div>
-
-						<div class="hours-container">
-							<div class="hours"></div>
-							<div class="hours-label">hours</div>
-						</div>
-
-						<div class="minutes-container">
-							<div class="minutes"></div>
-							<div class="minutes-label">minutes</div>
-						</div>
-
-						<div class="seconds-container">
-							<div class="seconds"></div>
-							<div class="seconds-label">seconds</div>
-						</div>
-					</section>
-					<div class="totalFlags">0</div>
+					<div class="youtube">
+						<iframe id="youtube-video" width="560" height="315" 
+						src="https://www.youtube.com/embed/krDWc30PAGg?autoplay=0&mute=0&loop=1&playlist=krDWc30PAGg&enablejsapi=1" 
+						title="YouTube video player" 
+						frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						referrerpolicy="strict-origin-when-cross-origin" 
+						allowfullscreen>
+						</iframe>
+					</div>
 				</div>
 				<!-- End Column 3 -->
 			</div>
@@ -285,15 +293,15 @@
 
 					<ul class="list-unstyled custom-social">
 						<li>
-							<a href="https://www.facebook.com/profile.php?id=61564194420859" target="_blank"><span
+							<a href="https://www.facebook.com/profile.php?id=61564194420859"><span
 									class="fa fa-brands fa-facebook-f"></span></a>
 						</li>
 						<li>
-							<a href="https://x.com/TirangaMudra" target="_blank"><span class="fa fa-brands fa-twitter"></span></a>
+							<a href="https://x.com/TirangaMudra"><span class="fa fa-brands fa-twitter"></span></a>
 						</li>
 						<!-- <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li> -->
 						<li>
-							<a href="https://www.youtube.com/@TirangaMudra" target="_blank"><span
+							<a href="https://www.youtube.com/@TirangaMudra"><span
 									class="fa fa-brands fa-youtube"></span></a>
 						</li>
 					</ul>
@@ -303,19 +311,19 @@
 					<div class="row links-wrap">
 						<div class="col-6 col-sm-6 col-md-4">
 							<ul class="list-unstyled">
-								<li><a href="#" target="_blank">About us</a></li>
+								<li><a href="#">About us</a></li>
 							</ul>
 						</div>
 
 						<div class="col-6 col-sm-6 col-md-4">
 							<ul class="list-unstyled">
-								<li><a href="#" target="_blank">Our Goals</a></li>
+								<li><a href="#">Our Goals</a></li>
 							</ul>
 						</div>
 
 						<div class="col-6 col-sm-6 col-md-4">
 							<ul class="list-unstyled">
-								<li><a href="#" target="_blank">Contact</a></li>
+								<li><a href="#">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -331,7 +339,7 @@
 								document.write(new Date().getFullYear());
 							</script>
 							. All Rights Reserved. &mdash;
-							<a href="https://saralkarma.org/" target="_blank">Saral Karma Org.</a>
+							<a href="https://saralkarma.org/">Saral Karma Org.</a>
 						</p>
 					</div>
 
