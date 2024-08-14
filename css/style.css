@@ -328,7 +328,7 @@ used in html tags = product-section-> container -> selection-title, btn, product
   justify-content: center;
 }
 .youtube{
-  position: relative;
+  position: static;
   display: flex;
   justify-content: center;
 }
