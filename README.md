@@ -13,7 +13,7 @@ I developed the frontend part of this project, using the following technologies:
 
 ### 🔗 Final Project
 
-- **Complete Application:** [2047tirangamudra Full Stack]([http://82.112.235.229/](https://www.2047tirangamudra.in/))
+- **Complete Application:** [2047tirangamudra Full Stack]([(https://www.2047tirangamudra.in/](https://www.2047tirangamudra.in/))
 
 ## 🛠️ Getting Started
 
