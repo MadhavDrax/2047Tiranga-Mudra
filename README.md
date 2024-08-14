@@ -9,11 +9,11 @@ Welcome to the **Viksit Bharat** project! This initiative aims to create a moder
 I developed the frontend part of this project, using the following technologies:
 
 - **Tech Stack:** HTML, CSS, JavaScript
-- **Live Preview:** [Viksit Bharat Frontend](https://madhavdrax.github.io/ViksitBharat/)
+- **Live Preview:** [2047tirangamudra Frontend](https://madhavdrax.github.io/ViksitBharat/)
 
 ### 🔗 Final Project
 
-- **Complete Application:** [Viksit Bharat Full Stack](http://82.112.235.229/)
+- **Complete Application:** [2047tirangamudra Full Stack]([http://82.112.235.229/](https://www.2047tirangamudra.in/))
 
 ## 🛠️ Getting Started
 
