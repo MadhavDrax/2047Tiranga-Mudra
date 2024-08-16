@@ -37,8 +37,8 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
-					<li><a class="nav-link" href="index.html">About us</a></li>
-					<li><a class="nav-link" href="index.html">Our Goals</a></li>
+					<li><a class="nav-link" href="about.html">About us</a></li>
+					<li><a class="nav-link" href="ourgoal.html">Our Goals</a></li>
 					<li><a class="nav-link" href="index.html">Contact us</a></li>
 				</ul>
 
@@ -58,7 +58,9 @@
 			<div class="row justify-content-between">
 				<div class="col-lg-5">
 					<div class="intro-excerpt">
-						<img src="images/Titanga-Mudra-PNG.png" alt="Titanga-Mudra-PNG" />
+						<div class="coin">
+							<img src="images/Titanga-Mudra-PNG.png" alt="Titanga-Mudra-PNG" />
+						</div>
 						<h1>1857 To 2047<span clsas="d-block"> <br>"Voice of Youth"</span></h1>
 						<!-- <p class="mb-4">..</p> -->
 						<!-- <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p> -->
@@ -163,20 +165,29 @@
 					<div class="popup" id="popup">
 						<span class="close" id="closePopup">&times;</span>
 						<div class="popup-content">
-							<p>Flag Donation Form</p>
-							<input type="text" placeholder="First Name" id="firstName" />
-							<input type="tel" placeholder="Phone No" id="phoneNo" />
-							<input type="email" placeholder="Your email" id="emailInput" />
-							<select name="country" id="country" onchange="loadStates()">
-								<option selected>Select Country</option>
+							<label for="firstName">Name*</label>
+							<input type="text" id="firstName" placeholder="Name*" required />
+							
+							<label for="phoneNo">Mobile*</label>
+							<input type="tel" id="phoneNo" placeholder="Mobile*" required />
+							
+							<label>Country*</label>
+							<div class="radio-group">
+								<!-- <label>
+									<input type="radio" name="country" value="India" checked /> India
+								</label>
+								<label>
+									<input type="radio" name="country" value="Other" /> Other
+								</label> -->
+							</div>
+							
+							<!-- <label for="state">State</label> -->
+							<select name="state" id="state" required>
+								<option value="" selected>Select State</option>
 							</select>
-							<select name="state" id="state">
-								<option selected>Select State</option>
-							</select>
-							<!-- <select name="city" id="city">
-										<option selected>Select City</option>
-									</select> -->
-							<input type="text" placeholder="Pin Code" id="pinCode" />
+							<label for="pinCode">Pin Code*</label>
+							<input type="text" placeholder="Pin Code" id="pinCode" required />
+							<label for="refCode">Referral Code</label>
 							<input type="text" placeholder="Referral Code" id="refCode" />
 							<button id="form-submit">Submit</button>
 						</div>
@@ -231,7 +242,7 @@
 	</div>
 	<!-- End Product Section -->
 
-	<!-- Start Blog Section -->
+	<!-- Start Our Goal Section -->
 	<div class="blog-section">
 		<div class="container">
 			<div class="row mb-5">
@@ -246,30 +257,30 @@
 			<div class="row">
 				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 					<div class="post-entry">
-						<a href="#" class="post-thumbnail"><img src="images/past-india.png" alt="Image"
+						<a href="ourgoal.html" class="post-thumbnail"><img src="images/past-india.png" alt="Image"
 								class="img-fluid" /></a>
 						<div class="post-content-entry">
-							<h3><a href="#">Past India</a></h3>
+							<h3><a href="ourgoal.html">Past India</a></h3>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 					<div class="post-entry">
-						<a href="#" class="post-thumbnail"><img src="images/present-india2.jpeg" alt="Image"
+						<a href="ourgoal.html" class="post-thumbnail"><img src="images/present-india2.jpeg" alt="Image"
 								class="img-fluid" /></a>
 						<div class="post-content-entry">
-							<h3><a href="#">Present India</a></h3>
+							<h3><a href="ourgoal.html">Present India</a></h3>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 					<div class="post-entry">
-						<a href="#" class="post-thumbnail"><img src="images/future-india.jpg" alt="Image"
+						<a href="ourgoal.html" class="post-thumbnail"><img src="images/future-india.jpg" alt="Image"
 								class="img-fluid" /></a>
 						<div class="post-content-entry">
-							<h3><a href="#">Future India</a></h3>
+							<h3><a href="ourgoal.html">Future India</a></h3>
 						</div>
 					</div>
 				</div>
@@ -311,13 +322,13 @@
 					<div class="row links-wrap">
 						<div class="col-6 col-sm-6 col-md-4">
 							<ul class="list-unstyled">
-								<li><a href="#">About us</a></li>
+								<li><a href="about.html">About us</a></li>
 							</ul>
 						</div>
 
 						<div class="col-6 col-sm-6 col-md-4">
 							<ul class="list-unstyled">
-								<li><a href="#">Our Goals</a></li>
+								<li><a href="ourgoal.html">Our Goals</a></li>
 							</ul>
 						</div>
 
@@ -345,7 +356,7 @@
 
 					<div class="col-lg-6 text-center text-lg-end">
 							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="Terms_and_Conditions_TM.pdf" target="_blank">Terms &amp; Conditions</a></li>
+								<li class="me-4"><a href="TermsandConditionsTM.pdf" target="_blank">Terms &amp; Conditions</a></li>
 								<li><a href="PrivacyPolicyTM.pdf" target="_blank">Privacy Policy</a></li>
 							</ul>
 						</div>
