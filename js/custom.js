@@ -211,3 +211,41 @@ var tag = document.createElement('script');
         window.location.href = whatsappLink;
 		
     });
+
+	//flip coin 
+// 	const coin = document.getElementById("coin");
+
+// 	coin.addEventListener("click", function () {
+// 	const keyframes = [
+// 		{ transform: "rotateY(0deg)" },
+// 		{ transform: "rotateY(360deg)" }
+// 	];
+// 	const options = {
+// 		duration: 2000,
+// 		iterations: Infinity,
+// 		easing: "linear"
+// 	};
+// 	const animation = coin.animate(keyframes, options);
+
+// 	animation.onfinish = function () {
+// 		console.log("End");
+// 	};
+// });
+
+const coin = document.querySelector(".coin");
+const keyframes = [
+	{ transform: "rotateY(0deg)" },
+	{ transform: "rotateY(360deg)" }
+];
+const options = {
+	duration: 2000, // Slowed down the speed of the flip
+	iterations: Infinity, // Continuous flipping
+	easing: "linear"
+};
+
+// Automatically start the animation
+const animation = coin.animate(keyframes, options);
+
+animation.onfinish = function () {
+	console.log("End");
+};
