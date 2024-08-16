@@ -1,6 +1,6 @@
 # 🌟 Viksit Bharat
 
-Welcome to the **Viksit Bharat** project! This initiative aims to create a modern, responsive, and interactive platform with a focus on improving the user experience. Below, you'll find details about the project's frontend and backend aspects.
+Welcome to the **Tiranga Mudra** project! This initiative aims to create a modern, responsive, and interactive platform with a focus on improving the user experience. Below, you'll find details about the project's frontend and backend aspects.
 
 ## 🚀 Project Overview
 
