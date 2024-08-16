@@ -1,4 +1,4 @@
-# 🌟 Viksit Bharat
+# 🌟 2047 Turanga Mudra
 
 Welcome to the **Tiranga Mudra** project! This initiative aims to create a modern, responsive, and interactive platform with a focus on improving the user experience. Below, you'll find details about the project's frontend and backend aspects.
 
